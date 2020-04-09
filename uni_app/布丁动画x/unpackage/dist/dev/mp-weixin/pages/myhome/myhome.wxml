@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['tap',[['phone',['$event']]]]]}}" bindtap="__e">联系电话： 158-9143-0190 ( 点击拨打 )</view></view>

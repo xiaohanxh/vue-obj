@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "时间线",
+  "usingComponents": {
+    "mask-and-content": "/components/QS-maskAndContent/QS-maskAndContent"
+  }
+}

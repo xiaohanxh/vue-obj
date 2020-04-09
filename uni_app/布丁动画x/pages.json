@@ -1,0 +1,104 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/fanzu/fanzu",
+            "style" : {
+				"navigationBarTitleText": "布丁动画",
+				"enablePullDownRefresh":true,
+				"app-plus":{
+					"bounce": "none",
+					"titleNView":{
+						"buttons":[{
+							"type" : "menu",
+							"float":"left"
+							}],
+						"titleColor":"#FF5218"
+					}
+				}
+			}
+        },
+        {
+            "path" : "pages/timeline/timeline",
+			"style": {
+				"navigationBarTitleText": "时间线",
+				"app-plus":{
+					"titleNView":{
+						"titleColor":"#FF5218"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/yiciyuan/yiciyuan",
+            "style" : {"navigationBarTitleText":"异次元",
+				"app-plus":{
+					"titleNView":{
+						"titleColor":"#FF5218"}
+					}
+			}	
+        }
+        ,{
+            "path" : "pages/myhome/myhome",
+            "style" : {"navigationBarTitleText":"私宅",
+				"app-plus":{
+					"titleNView":{
+						"titleColor":"#FF5218"}
+					}
+				}
+        }
+        ,{
+            "path" : "pages/mainneirong/mainneirong",
+            "style" : {"navigationBarTitleText":"详情页",
+			"enablePullDownRefresh":true,
+			"app-plus":{
+				"titleNView":{
+					"titleColor":"#FF5218"
+				}
+			}}
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/tupian/tupian",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "布丁动画",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F0F2F6"
+	},
+	"tabBar":{
+		"color":"#bfbfbf",
+		"selectedColor":"#FF5218",
+		"list":[
+			{
+			"text":"首页",
+			"pagePath":"pages/fanzu/fanzu",
+			"iconPath":"static/font/region.png",
+			"selectedIconPath":"static/font/region(1).png"
+		},
+		{
+			"text":"时间线",
+			"pagePath":"pages/timeline/timeline",
+			"iconPath":"static/font/time.png",
+			"selectedIconPath":"static/font/time(1).png"
+		},
+		{
+			"text":"异次元",
+			"pagePath":"pages/yiciyuan/yiciyuan",
+			"iconPath":"static/font/earth.png",
+			"selectedIconPath":"static/font/earth(1).png"
+		},
+		{
+			"text":"私宅",
+			"pagePath":"pages/myhome/myhome",
+			"iconPath":"static/font/ghost.png",
+			"selectedIconPath":"static/font/ghost(1).png"
+		}
+		]
+	}
+}

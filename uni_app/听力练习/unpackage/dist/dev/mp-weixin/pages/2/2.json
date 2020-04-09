@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "s-slider": "/components/simple-slider/simple-slider",
+    "mask-and-content": "/components/QS-maskAndContent/QS-maskAndContent"
+  }
+}

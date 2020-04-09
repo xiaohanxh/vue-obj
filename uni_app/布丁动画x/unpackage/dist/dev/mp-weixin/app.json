@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/fanzu/fanzu",
+    "pages/timeline/timeline",
+    "pages/yiciyuan/yiciyuan",
+    "pages/myhome/myhome",
+    "pages/mainneirong/mainneirong",
+    "pages/mine/mine",
+    "pages/tupian/tupian"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "布丁动画",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F0F2F6"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#FF5218",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/fanzu/fanzu",
+        "iconPath": "static/font/region.png",
+        "selectedIconPath": "static/font/region(1).png"
+      },
+      {
+        "text": "时间线",
+        "pagePath": "pages/timeline/timeline",
+        "iconPath": "static/font/time.png",
+        "selectedIconPath": "static/font/time(1).png"
+      },
+      {
+        "text": "异次元",
+        "pagePath": "pages/yiciyuan/yiciyuan",
+        "iconPath": "static/font/earth.png",
+        "selectedIconPath": "static/font/earth(1).png"
+      },
+      {
+        "text": "私宅",
+        "pagePath": "pages/myhome/myhome",
+        "iconPath": "static/font/ghost.png",
+        "selectedIconPath": "static/font/ghost(1).png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

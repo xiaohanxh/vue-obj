@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "布丁动画",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "hj-dragabledrawer": "/components/hj-dragabledrawer/hj-dragabledrawer",
+    "mask-and-content": "/components/QS-maskAndContent/QS-maskAndContent"
+  }
+}

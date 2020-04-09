@@ -1,0 +1,41 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/2/2",
+            "style" : {}
+        }
+		,{
+			"path": "pages/index/index",
+			"style": {
+			}
+		}
+        
+        ,{
+            "path" : "pages/login/login",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "听力练习",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#bfbfbf",
+		"selectedColor":"#FF5218",
+		"list":[
+			{
+			"text":"首页",
+			"pagePath":"pages/2/2",
+			"iconPath":"static/logo.png",
+			"selectedIconPath":"static/logo.png"
+		},
+		{
+			"text":"时间线",
+			"pagePath":"pages/index/index",
+			"iconPath":"static/logo.png",
+			"selectedIconPath":"static/logo.png"
+		}]
+   }
+}
