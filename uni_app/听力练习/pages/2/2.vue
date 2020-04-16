@@ -6,10 +6,21 @@
 				<button type="default" @click="todcb()">保存到单词本</button>
 			</view>
 		</maskAndContent>
-		<image style="width: 100rpx;height: 100rpx;float: right;" src="../../static/logo.png" mode="widthFix" @click="tologin"></image>
-		<view class="col slider-container"><s-slider v-model="vol" :min="0.2" :max="1" :step="0.1" size="220" sizeUnit="rpx" @changing="changevol" @changed="changevol" />
+		<!-- <image style="width: 100rpx;height: 100rpx;float: right;" src="../../static/logo.png" mode="widthFix" @click="tologin"></image> -->
+		<!-- <view class="col slider-container"><s-slider v-model="vol" :min="0.2" :max="1" :step="0.1" size="220" sizeUnit="rpx" @changing="changevol" @changed="changevol" /> -->
+		<!-- </view> -->
+		<view class="topt" style="background-image: url(../../static/1137037.gif);height: 70rpx;background-repeat: no-repeat;margin-bottom: 10rpx;">
+			<text>精听</text><text>训练</text><text>我的</text><image src="../../static/1138742.gif" mode="widthFix"></image>
 		</view>
-		
+		<view style="height: 10rpx;background-color:#DCDCDC;"></view>
+		<view id="lyricclass" >
+			<view v-html="lyric2" id="0" style="top: 0rpx;">	
+			</view>
+		</view>	
+		<view style="height: 10rpx;background-color: #DCDCDC;"></view>
+		<button @click="vis()">隐藏歌词</button>
+		<button @click="xh()">循环本句</button>
+		<button @tap="tan1">弹出</button>
 		<video id="myVideo" :src="url" class="hidden" @timeupdate="timeupdate" ref="video" @loadedmetadata="loadedmetadata" ></video>
 		
 		<view class="slider-box">
@@ -23,28 +34,22 @@
 				:min="0"
 				:max="duration"
 				:value="currentTime"
-				activeColor="#ff7400"
+				activeColor="#C8D4EC"
 				@touchstart="lock= true"
 				@touchend="lock = false"
 				/>
 			<text class="ss">{{overTimer}}</text>
 		</view>
-		
-		<button @tap="play">{{playa}}</button>
-		<button @tap="tan1">弹出</button>
-		<button @tap="setRate()">{{num}}倍</button>
+		<image src="../../static/1137043.gif" style="width: 130rpx;height: 130rpx;"></image>
+		<!-- <button @tap="play">{{playa}}</button> -->
+		<image :src=playa style="width: 130rpx;height: 130rpx;" @click="play"></image>
+		<image src="../../static/1137044.gif" style="width: 130rpx;height: 130rpx;"></image>
+		<button @tap="setRate()" style="font-size: 30rpx;">{{num}}X</button>
 		<button @click="atob()" >{{adaob}}</button>
-		<button @click="vis()">隐藏歌词</button>
 		<button @click="lastone()">上一句</button>
 		<button @click="thenext">下一句</button>
-		<button @click="xh()">循环本句</button>
 		<button @click="disanswer()">只看答案句</button>
-		
-		<view id="lyricclass" >
-			<view v-html="lyric2" id="0" style="top: 0rpx;">
-				
-			</view>
-		</view>
+<image src="" mode=""></image>
 	</view>
 </template>
 
@@ -69,7 +74,7 @@
 				videoContext: '',
 				url:'../../static/xiao.mp3',
 				vol:0.5,
-				playa:"播放",
+				playa:'../../static/1137039.gif',
 				innerText0:'',
 				atb:0,   //0无A-B，1：A-B，2：停止A-B
 				time0:9999,
@@ -266,12 +271,12 @@
 				if(this.playflag){
 					this.videoContext.pause()
 					this.playflag=false
-					this.playa="播放"
+					this.playa="../../static/1137039.gif"
 				}else{
 					// this.audio.currentTime=0
 				this.videoContext.play()
 					this.playflag=true
-					this.playa="暂停"
+					this.playa="../../static/1137042.gif"
 				}
 			},
 			
@@ -295,11 +300,11 @@
 				if(document.getElementById(this.cuttime) && this.cuttime!==0){
 					now = document.getElementById(this.cuttime)
 					if(this.key){
-					document.getElementById(this.last).style.color="#F1F1F1"}
+					document.getElementById(this.last).style.color="#000000"}
 					if(this.answer[now.title]===1){
-						now.style.color="#007AFF"
+						now.style.color="#DD524D"
 					}else{
-						now.style.color="#000"
+						now.style.color="#007AFF"
 					}
 					if(now.title>=8)
 					document.getElementById("lyricclass").scrollTop=30*(now.title-8)
@@ -380,6 +385,15 @@
 </script>
 
 <style scoped lang="scss">
+	.topt{
+		>text{
+			margin-left: 120rpx;
+		}
+		>image{
+			width: 80rpx;
+			margin-left: 80rpx;
+		}
+	}
 	#0{
 		
 		position: relative;
@@ -387,8 +401,8 @@
 	#lyricclass{
 		text-align: center;
 		height: 838rpx;
-		background-color: #333333;
-		color: #F1F1F1;
+		background-color: #FFFFFF;
+		color: #000000;
 		overflow:scroll;
 			}
 	.audo-video {

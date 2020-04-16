@@ -208,6 +208,7 @@ export default {
 }
 .el-main{
   background-color: #E6E8EA;
+  overflow:hidden;
 }
 .el-container{
     height: 100%;

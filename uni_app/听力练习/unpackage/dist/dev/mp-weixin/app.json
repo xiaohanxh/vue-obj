@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/2/2",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/login/login"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTitleText": "听力练习",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
@@ -28,6 +29,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap13.json"
+  "usingComponents": {}
 }

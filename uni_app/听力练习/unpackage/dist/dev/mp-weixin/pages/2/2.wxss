@@ -24,22 +24,29 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-#lyricid.data-v-9c21165a {
+.topt > text.data-v-7922fb9a {
+  margin-left: 120rpx;
+}
+.topt > image.data-v-7922fb9a {
+  width: 80rpx;
+  margin-left: 80rpx;
+}
+#0.data-v-7922fb9a {
   position: relative;
 }
-#lyricclass.data-v-9c21165a {
+#lyricclass.data-v-7922fb9a {
   text-align: center;
   height: 838rpx;
-  background-color: #333333;
-  color: #F1F1F1;
-  overflow: overlay;
+  background-color: #FFFFFF;
+  color: #000000;
+  overflow: scroll;
 }
-.audo-video.data-v-9c21165a {
+.audo-video.data-v-7922fb9a {
   padding-bottom: 20rpx;
   height: 100%;
   width: 100%;
 }
-.slider-box.data-v-9c21165a {
+.slider-box.data-v-7922fb9a {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -52,7 +59,7 @@
   font-size: 26rpx;
   color: #999;
 }
-button.data-v-9c21165a {
+button.data-v-7922fb9a {
   display: inline-block;
   width: 100rpx;
   background-color: #fff;
@@ -60,13 +67,13 @@ button.data-v-9c21165a {
   color: #000;
   padding: 0;
 }
-.hidden.data-v-9c21165a {
+.hidden.data-v-7922fb9a {
   position: fixed;
   z-index: -1;
   width: 1rpx;
   height: 1rpx;
 }
-.col.data-v-9c21165a {
+.col.data-v-7922fb9a {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -78,7 +85,7 @@ button.data-v-9c21165a {
   -webkit-align-items: center;
           align-items: center;
 }
-.slider-container.data-v-9c21165a {
+.slider-container.data-v-7922fb9a {
   width: 60rpx;
   height: 280rpx;
   -webkit-box-pack: center;
